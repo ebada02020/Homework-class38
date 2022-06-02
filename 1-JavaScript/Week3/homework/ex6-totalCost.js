@@ -31,13 +31,13 @@ const cartForParty = {
   Drinks: 0.95,
 };
 function calculateTotalPrice(cart) {
-  let calculateTotalPrice = 0;
+  let totalPrice = 0;
   for (const el in cartForParty) {
     if (cartForParty.hasOwnProperty(el)) {
-      calculateTotalPrice += parseFloat(cartForParty[el]);
+      totalPrice += cartForParty[el];
     }
   }
-  return `Total: €${calculateTotalPrice}`;
+  return `Total: €${totalPrice}`;
 }
 const sum = calculateTotalPrice(cartForParty);
 

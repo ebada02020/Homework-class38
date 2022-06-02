@@ -34,16 +34,15 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly(array) {
-  const randomIndex = Math.floor(Math.random() * array.length);
-  return randomIndex;
+  return Math.floor(Math.random() * array.length);
 }
 
-function tellFortune(array1, array2, array3, array4) {
-  const numKids = array1[selectRandomly(array1)];
-  const partnerNames = array2[selectRandomly(array2)];
-  const locations = array3[selectRandomly(array3)];
-  const jobTitles = array4[selectRandomly(array4)];
-  return `You will be a ${jobTitles} in ${locations}, married to ${partnerNames} with ${numKids} kids.`;
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  return `You will be a ${jobTitles[selectRandomly(jobTitles)]} in ${
+    locations[selectRandomly(locations)]
+  }, married to ${partnerNames[selectRandomly(partnerNames)]} with ${
+    numKids[selectRandomly(numKids)]
+  } kids.`;
 }
 
 function main() {

@@ -30,12 +30,10 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(array) {
-  const notPrivetData = employeeRecords.map(
-    ({ name, occupation, gender, email, salary }) => {
-      return { name, occupation, email };
-    }
-  );
+function filterPrivateData(employeeRecords) {
+  const notPrivetData = employeeRecords.map(({ name, occupation, email }) => {
+    return { name, occupation, email };
+  });
   return notPrivetData;
 }
 filterPrivateData(employeeRecords);
