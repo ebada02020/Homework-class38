@@ -17,12 +17,9 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCart, groceryItem) {
-  const initialCart = shoppingCart;
-  initialCart.push(groceryItem);
-  if (initialCart.length !== 3) {
-    initialCart.slice(initialCart.length - 3);
-  }
-  return initialCart;
+  const initialCart = [...shoppingCart, groceryItem];
+  const newCart = initialCart.slice(-3);
+  return newCart;
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -42,7 +39,7 @@ function test2() {
 }
 
 function test3() {
-  console.log('Test 4: `chocolate` should be added');
+  console.log('Test 3: `chocolate` should be added');
   const initialCart = ['bananas', 'milk'];
   const result = addToShoppingCart(initialCart, 'chocolate');
   console.assert(result.length === 3);
