@@ -223,3 +223,277 @@ Browserslist: caniuse-lite is outdated. Please run:
 2022-06-04 10:17:49 error: *** Spell Checker Report ***
 
 
+2022-06-06 01:35:31 info: ------------------------------------------------------
+2022-06-06 01:35:31 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-06-06 01:35:31 info: ------------------------------------------------------
+2022-06-06 01:35:37 info: All unit tests passed.
+2022-06-06 01:35:40 error: *** Spell Checker Report ***
+
+
+2022-06-06 01:38:42 info: ------------------------------------------------------
+2022-06-06 01:38:42 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-06-06 01:38:42 info: ------------------------------------------------------
+2022-06-06 01:38:48 info: All unit tests passed.
+2022-06-06 01:38:51 error: *** Spell Checker Report ***
+
+
+2022-06-06 09:07:58 info: -------------------------------------------------
+2022-06-06 09:07:58 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-06 09:07:58 info: -------------------------------------------------
+2022-06-06 09:08:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (25 ms)
+    ✕ should compute the earnings as a formatted Euro amount (7 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 187.5
+
+      50 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      51 |     const expected = '€187.50';
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.344 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-06-06 09:08:12 error: *** Spell Checker Report ***
+
+
+2022-06-06 09:12:30 info: -------------------------------------------------
+2022-06-06 09:12:30 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-06 09:12:30 info: -------------------------------------------------
+2022-06-06 09:12:40 info: All unit tests passed.
+2022-06-06 09:12:48 error: *** Spell Checker Report ***
+
+
+2022-06-06 10:57:24 info: -------------------------------------------------
+2022-06-06 10:57:24 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-06 10:57:24 info: -------------------------------------------------
+2022-06-06 10:57:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (5 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      46 |     const originalFruitBasketContents = [...fruitBasket];
+      47 |     // TODO replace next line with your code
+    > 48 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      53 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      54 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 55 |     expect(result).toBe(expected);
+         |                    ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.023 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-06 10:57:34 error: *** Spell Checker Report ***
+
+
+2022-06-06 10:58:27 info: -------------------------------------------------
+2022-06-06 10:58:27 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-06 10:58:27 info: -------------------------------------------------
+2022-06-06 10:58:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (2 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (5 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      53 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      54 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 55 |     expect(result).toBe(expected);
+         |                    ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.98 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-06 10:58:35 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:00:26 info: -------------------------------------------------
+2022-06-06 11:00:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-06 11:00:26 info: -------------------------------------------------
+2022-06-06 11:00:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (3 ms)
+    ✕ should not modify the original `fruitBasket` array (6 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      46 |     const originalFruitBasketContents = [...fruitBasket];
+      47 |     // TODO replace next line with your code
+    > 48 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      53 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      54 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 55 |     expect(result).toBe(expected);
+         |                    ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.868 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-06 11:00:35 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:01:17 info: -------------------------------------------------
+2022-06-06 11:01:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-06 11:01:17 info: -------------------------------------------------
+2022-06-06 11:01:22 info: All unit tests passed.
+2022-06-06 11:01:25 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:03:54 info: ------------------------------------------------------
+2022-06-06 11:03:54 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-06-06 11:03:54 info: ------------------------------------------------------
+2022-06-06 11:04:00 info: All unit tests passed.
+2022-06-06 11:04:03 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:04:17 info: -------------------------------------------------
+2022-06-06 11:04:17 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-06 11:04:17 info: -------------------------------------------------
+2022-06-06 11:04:21 info: All unit tests passed.
+2022-06-06 11:04:23 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:04:45 info: -------------------------------------------------
+2022-06-06 11:04:45 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-06 11:04:45 info: -------------------------------------------------
+2022-06-06 11:04:49 info: All unit tests passed.
+2022-06-06 11:04:51 error: *** Spell Checker Report ***
+
+
+2022-06-06 11:50:36 info: ------------------------------------------
+2022-06-06 11:50:36 info: >>> Running Unit Test `ex4-observable` <<<
+2022-06-06 11:50:36 info: ------------------------------------------
+2022-06-06 11:50:42 info: All unit tests passed.
+2022-06-06 11:50:45 error: *** Spell Checker Report ***
+
+
+2022-06-07 12:26:04 info: --------------------------------------
+2022-06-07 12:26:04 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-06-07 12:26:04 info: --------------------------------------
+2022-06-07 12:26:10 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Hack-Your-Future-Exercise&projects/JavaScript/Homework-class38/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2022-06-07 12:26:14 error: *** Spell Checker Report ***
+
+
