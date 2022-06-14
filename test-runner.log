@@ -497,3 +497,433 @@ Browserslist: caniuse-lite is outdated. Please run:
 2022-06-07 12:26:14 error: *** Spell Checker Report ***
 
 
+2022-06-13 12:31:58 info: ------------------------------------------
+2022-06-13 12:31:58 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-06-13 12:31:58 info: ------------------------------------------
+2022-06-13 12:32:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (2 ms)
+    ✓ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✓ a living cell with one living neighbor should die and have its life time reset to zero (9 ms)
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one (12 ms)
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one (2 ms)
+    ✓ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 0
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 0
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.569 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2022-06-13 12:32:14 error: *** Spell Checker Report ***
+
+
+2022-06-13 12:35:03 info: ------------------------------------------
+2022-06-13 12:35:03 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-06-13 12:35:03 info: ------------------------------------------
+2022-06-13 12:35:10 info: All unit tests passed.
+2022-06-13 12:35:13 error: *** Spell Checker Report ***
+
+
+2022-06-14 08:38:14 info: ---------------------------------------
+2022-06-14 08:38:14 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-06-14 08:38:14 info: ---------------------------------------
+2022-06-14 08:38:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.325 s)
+  Generated HTML
+    ✓ should be syntactically valid (410 ms)
+    ✕ should have all TODO comments removed (7 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (65 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        6.54 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-06-14 08:38:31 error: *** Spell Checker Report ***
+
+
+2022-06-14 08:39:38 info: ---------------------------------------
+2022-06-14 08:39:38 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-06-14 08:39:38 info: ---------------------------------------
+2022-06-14 08:39:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.387 s)
+  Generated HTML
+    ✓ should be syntactically valid (188 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (43 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.593 s, estimated 7 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-06-14 08:39:52 error: *** Spell Checker Report ***
+
+
+2022-06-14 09:14:15 info: ---------------------------------------
+2022-06-14 09:14:15 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-06-14 09:14:15 info: ---------------------------------------
+2022-06-14 09:14:26 info: All unit tests passed.
+2022-06-14 09:14:29 error: *** Spell Checker Report ***
+
+
+2022-06-14 09:15:16 info: ------------------------------------------
+2022-06-14 09:15:16 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-06-14 09:15:16 info: ------------------------------------------
+2022-06-14 09:15:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (4 ms)
+    ✓ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.032 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2022-06-14 09:15:25 error: *** Spell Checker Report ***
+
+
+2022-06-14 09:16:03 info: ------------------------------------------
+2022-06-14 09:16:03 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-06-14 09:16:03 info: ------------------------------------------
+2022-06-14 09:16:09 info: All unit tests passed.
+2022-06-14 09:16:12 error: *** Spell Checker Report ***
+
+
+2022-06-14 10:57:52 info: --------------------------------------------
+2022-06-14 10:57:52 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 10:57:52 info: --------------------------------------------
+2022-06-14 10:58:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (8.48 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (174 ms)
+    ✓ should have all TODO comments removed
+    ✕ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        8.66 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-14 10:58:11 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:06:58 info: --------------------------------------------
+2022-06-14 11:06:58 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:06:58 info: --------------------------------------------
+2022-06-14 11:07:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.767 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (159 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2002 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (3 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.944 s, estimated 9 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-14 11:07:16 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:09:00 info: --------------------------------------------
+2022-06-14 11:09:00 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:09:00 info: --------------------------------------------
+2022-06-14 11:09:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.442 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (165 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2006 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✕ `window.onload` or `window.addEventListener` should not call its event handler function (3 ms)
+
+  ● whatsTheTime › `window.onload` or `window.addEventListener` should not call its event handler function
+
+    expect(received).not.toBeDefined()
+
+    Received: true
+
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+    > 69 |     expect(state.callError).not.toBeDefined();
+         |                                 ^
+      70 |   });
+      71 | });
+      72 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:69:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.589 s, estimated 8 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-14 11:09:18 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:10:26 info: --------------------------------------------
+2022-06-14 11:10:26 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:10:26 info: --------------------------------------------
+2022-06-14 11:10:38 info: All unit tests passed.
+2022-06-14 11:10:42 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:12:52 info: --------------------------------------------
+2022-06-14 11:12:52 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:12:52 info: --------------------------------------------
+2022-06-14 11:13:05 info: All unit tests passed.
+2022-06-14 11:13:10 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:15:23 info: --------------------------------------------
+2022-06-14 11:15:23 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:15:23 info: --------------------------------------------
+2022-06-14 11:15:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.527 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (160 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.702 s, estimated 8 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-14 11:15:40 error: *** Spell Checker Report ***
+
+
+2022-06-14 11:16:27 info: --------------------------------------------
+2022-06-14 11:16:27 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-14 11:16:27 info: --------------------------------------------
+2022-06-14 11:16:40 info: All unit tests passed.
+2022-06-14 11:16:44 error: *** Spell Checker Report ***
+
+
