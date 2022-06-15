@@ -16,12 +16,9 @@ Complete the `createObservable()` function as follows:
 function createObservable() {
   const subscribers = [];
   return {
-    subscribe: function (subscriber) {
-      return subscribers.push(subscriber);
-    },
-    notify: function (message) {
-      return subscribers.forEach((item) => item(message));
-    },
+    subscribe: (subscriber) => subscribers.push(subscriber),
+    notify: (message) =>
+      subscribers.forEach((subscriber) => subscriber(message)),
   };
 }
 
