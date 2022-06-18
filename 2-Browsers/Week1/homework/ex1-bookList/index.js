@@ -16,36 +16,34 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
-const { i, p } = require('html-validate/dist/cjs/core');
-const { forEach } = require('lodash');
-
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
-
-
-  books.forEach(book, index) {
-    const ulBooks = document.createElement('ul');
-    // document.body.appendChild(ulBooks);
-    const liBooks = document.createElement('il');
-    const imgBooks = document.createElement('img');
+  const ulBooks = document.createElement('ul');
+  ulBooks.style.display = 'flex';
+  ulBooks.style.display = 'flex-wrap';
+  document.body.appendChild(ulBooks);
+  books.forEach((book, index) => {
+    const liBooks = document.createElement('li');
+    ulBooks.appendChild(liBooks);
+    const imgEl = document.createElement('img');
+    const paragraph = document.createElement('p');
+    liBooks.appendChild(paragraph);
+    liBooks.appendChild(imgEl);
     const imgList = [
-      'assets/the_design_of_everyday_things.jpg',
-      'assets/the_most_human_human.jpg',
-      'assets/the_pragmatic_programmer.jpg',
+      './assets/the_design_of_everyday_things.jpg',
+      './assets/the_most_human_human.jpg',
+      './assets/the_pragmatic_programmer.jpg',
     ];
-    imgBooks.appendChild(imgList[index])
-    liBooks.appendChild(document.createTextNode(`${ book.title } - ${book.author}`));
-    liBooks.appendChild(imgBooks);
-    ulBooks.appendChild(liBooks)
+    imgEl.src = imgList[index];
     if (book.alreadyRead === true) {
       liBooks.style.backgroundColor = 'green';
     } else {
       liBooks.style.backgroundColor = 'red';
-
     }
-  }
-return ulBooks
+    paragraph.appendChild(
+      document.createTextNode(`${book.title} - ${book.author}`)
+    );
+  });
+  return ulBooks;
 }
 
 function main() {
