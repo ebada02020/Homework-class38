@@ -1187,3 +1187,182 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 
 
 2022-06-18 11:20:41 info: Disclaimer turned off
+2022-06-19 10:18:58 info: --------------------------------------------
+2022-06-19 10:18:58 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 10:18:58 info: --------------------------------------------
+2022-06-19 10:19:11 info: All unit tests passed.
+2022-06-19 10:19:18 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:06:41 info: --------------------------------------------
+2022-06-19 09:06:41 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:06:41 info: --------------------------------------------
+2022-06-19 09:06:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.794 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (163 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2006 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h1> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.97 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-19 09:06:59 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:08:59 info: --------------------------------------------
+2022-06-19 09:08:59 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:08:59 info: --------------------------------------------
+2022-06-19 09:09:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.49 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (167 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h1> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.653 s, estimated 8 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-19 09:09:16 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:10:21 info: --------------------------------------------
+2022-06-19 09:10:21 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:10:21 info: --------------------------------------------
+2022-06-19 09:10:33 info: All unit tests passed.
+2022-06-19 09:10:36 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:12:18 info: --------------------------------------------
+2022-06-19 09:12:18 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:12:18 info: --------------------------------------------
+2022-06-19 09:12:32 info: All unit tests passed.
+2022-06-19 09:12:36 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:13:36 info: --------------------------------------------
+2022-06-19 09:13:36 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:13:36 info: --------------------------------------------
+2022-06-19 09:13:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.416 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (183 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()` (1 ms)
+    ✓ should not call `setInterval()` more than once (2006 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h1> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.591 s, estimated 8 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-06-19 09:13:50 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:14:15 info: --------------------------------------------
+2022-06-19 09:14:15 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-06-19 09:14:15 info: --------------------------------------------
+2022-06-19 09:14:26 info: All unit tests passed.
+2022-06-19 09:14:29 error: *** Spell Checker Report ***
+
+
+2022-06-19 09:15:13 info: ---------------------------------------
+2022-06-19 09:15:13 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-06-19 09:15:13 info: ---------------------------------------
+2022-06-19 09:15:23 info: All unit tests passed.
+2022-06-19 09:15:27 error: *** Spell Checker Report ***
+
+
